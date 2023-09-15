@@ -12,6 +12,20 @@ export const chakraTheme = extendTheme({
 
       "html, body": {
         background: "#F5F5F5",
+        width: "100vw",
+        overflow: "hidden",
+      },
+
+      ".rotate": {
+        animation: "rotate 2s inifite",
+      },
+      "@keyframes rotate": {
+        from: {
+          transform: "rotate(0deg)",
+        },
+        to: {
+          transform: "rotate(360deg)",
+        },
       },
     },
   },

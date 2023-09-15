@@ -5,8 +5,14 @@ import { AdditionalInfo } from "./components/AdditionalInfo";
 import CompanyIcon from "../../assets/icons/company.svg";
 import AgronomicIcon from "../../assets/icons/agronomic.svg";
 import FinancialIcon from "../../assets/icons/financial.svg";
+import { CurrentPageEnum } from "../../types";
 
-export const Header = () => {
+interface HeaderProps {
+  currentPage: CurrentPageEnum;
+  handleChangePage(prop: CurrentPageEnum): void;
+}
+
+export const Header = ({ handleChangePage, currentPage }: HeaderProps) => {
   return (
     <Flex
       width="calc(100% - 64px)"
@@ -80,9 +86,19 @@ export const Header = () => {
         </Flex>
         <Flex mt="5px" alignItems="center">
           <Flex gap="11px" marginLeft="102px" flex={1}>
-            <Button label="Empresa" icon={CompanyIcon} />
-            <Button label="Agronômico" icon={AgronomicIcon} />
-            <Button label="Financeiro" icon={FinancialIcon} />
+            <Button isDisabled label="Empresa" icon={CompanyIcon} />
+            <Button
+              label="Agronômico"
+              icon={AgronomicIcon}
+              onClick={() => handleChangePage(CurrentPageEnum.agronomic)}
+              isActive={currentPage === CurrentPageEnum.agronomic}
+            />
+            <Button
+              label="Financeiro"
+              icon={FinancialIcon}
+              onClick={() => handleChangePage(CurrentPageEnum.financial)}
+              isActive={currentPage === CurrentPageEnum.financial}
+            />
           </Flex>
 
           <Flex mr="44px" gap="20px">
