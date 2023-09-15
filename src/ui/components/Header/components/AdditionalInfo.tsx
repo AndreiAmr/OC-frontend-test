@@ -13,7 +13,7 @@ export const AdditionalInfo = ({ title, description }: AdditionalInfoProps) => {
         {title}
       </Text>
 
-      <Flex gap="8px">
+      <Flex gap="10px" alignItems="center">
         <Image src={UserIcon} />
         <Text textAlign="right" fontWeight={700} color="gray.600">
           {description}
