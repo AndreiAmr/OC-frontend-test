@@ -5,12 +5,17 @@ import { RefreshContainer } from "../../../../components/RefreshContainer";
 import { FazendaItem } from "../../../../components/FazendaItem";
 import { useFarms } from "../../../../../infra/hooks/useFarms";
 import { useCallback } from "react";
+import { FarmProps } from "../../../../../infra/types/farm";
 
-// interface FazendasProps {
+interface FazendasProps {
+  handleChangeCurrentFarm(farm: FarmProps): void;
+  currentFarm: FarmProps;
+}
 
-// }
-
-export const Fazendas = () => {
+export const Fazendas = ({
+  currentFarm,
+  handleChangeCurrentFarm,
+}: FazendasProps) => {
   const { items, handlers } = useFarms();
   const { farms, isLoading } = items;
   const { refresh } = handlers;
@@ -40,10 +45,11 @@ export const Fazendas = () => {
         location={item.location}
         title={item.name}
         totalArea={item.totalArea}
-        isActive={indice === 0}
+        isActive={currentFarm.name === item.name}
+        onPress={() => handleChangeCurrentFarm(item)}
       />
     ));
-  }, [isLoading, farms]);
+  }, [isLoading, farms, currentFarm, handleChangeCurrentFarm]);
 
   return (
     <RefreshContainer
@@ -52,7 +58,7 @@ export const Fazendas = () => {
       lastRefresh={items.lastRefresh}
     >
       <Box>
-        <Text fontWeight="bold" color="#2D3748" mb="30px">
+        <Text fontWeight={800} color="#2D3748" mb="30px">
           Fazendas
         </Text>
         <Flex wrap="wrap" gap="27px">

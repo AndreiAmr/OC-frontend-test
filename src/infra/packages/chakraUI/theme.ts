@@ -8,12 +8,13 @@ export const chakraTheme = extendTheme({
         padding: 0,
         boxSizing: "border-box",
         fontFamily: "Helvetica",
+        outline: "none !important",
       },
 
       "html, body": {
         background: "#F5F5F5",
         width: "100vw",
-        overflow: "hidden",
+        overflowX: "hidden",
       },
 
       ".rotate": {

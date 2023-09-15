@@ -31,7 +31,7 @@ export const farmsMocked: FarmProps[] = [
     ],
   },
   {
-    name: "Fazenda Salto Alto",
+    name: "AgroTech",
     location: "Belo Horizonte - MG",
     totalArea: 430,
     areaProdutiva: 380,
@@ -60,7 +60,7 @@ export const farmsMocked: FarmProps[] = [
     ],
   },
   {
-    name: "Fazenda Salto Alto",
+    name: "AgroNomic",
     location: "Belo Horizonte - MG",
     totalArea: 430,
     areaProdutiva: 380,
