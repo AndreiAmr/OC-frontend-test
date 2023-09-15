@@ -8,6 +8,7 @@ interface FazendaItem {
   totalArea: number;
   areaPropria: number;
   isActive?: boolean;
+  onPress(): void;
 }
 
 export const FazendaItem = ({
@@ -16,6 +17,7 @@ export const FazendaItem = ({
   location,
   totalArea,
   isActive,
+  onPress,
 }: FazendaItem) => {
   return (
     <AnimatePresence>
@@ -24,6 +26,7 @@ export const FazendaItem = ({
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -100 }}
         whileTap={{ scale: 0.9 }}
+        onClick={onPress}
       >
         <Flex
           gap="13px"

@@ -3,8 +3,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Box } from "@chakra-ui/react";
 import { TotalArea } from "./components/TotalArea";
 import { Fazendas } from "./components/Fazendas";
+import { FarmDetails } from "./components/FarmDetail";
+import { useState } from "react";
+import { FarmProps } from "../../../infra/types/farm";
+import { farmsMocked } from "../../../infra/mocks/farms";
 
 export const Agronomic = () => {
+  const [currentFarm, setCurrentFarm] = useState<FarmProps>(farmsMocked[0]);
+
   return (
     <AnimatePresence>
       <motion.div
@@ -12,10 +18,14 @@ export const Agronomic = () => {
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -100 }}
       >
-        <Box marginTop="120px" px="55px" gap="">
+        <Box marginTop="120px" px="55px" gap="" mb="146px">
           <TotalArea />
           <Box height="15px" />
-          <Fazendas />
+          <Fazendas
+            currentFarm={currentFarm}
+            handleChangeCurrentFarm={setCurrentFarm}
+          />
+          <FarmDetails currentFarm={currentFarm} />
         </Box>
       </motion.div>
     </AnimatePresence>
