@@ -24,7 +24,7 @@ export const Rating = ({ isLoading, finalRate, resultNumber }: RatingProps) => {
     >
       <Text
         fontWeight={700}
-        color="gray.900"
+        color="alpha900"
         fontSize="1.1em"
         width="105px"
         marginX="60px"
@@ -34,18 +34,18 @@ export const Rating = ({ isLoading, finalRate, resultNumber }: RatingProps) => {
       <Text fontWeight={700} color="green.600" fontSize="64px">
         {finalRate}
       </Text>
-      <Text fontWeight={600} color="gray.900" fontSize="1em" marginTop="4px">
+      <Text fontWeight={600} color="alpha900" fontSize="1em" marginTop="4px">
         {resultNumber}
       </Text>
       <Divider my="16px" />
-      <Text color="gray.400" fontSize="14px" fontWeight={400} mb="8px">
+      <Text color="alpha400" fontSize="14px" fontWeight={400} mb="8px">
         OBJETIVO
       </Text>
       <Tag
         size="lg"
         padding="16px"
         fontWeight={700}
-        color="gray.600"
+        color="alpha600"
         background="blue.50"
       >
         98,9

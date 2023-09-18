@@ -20,14 +20,14 @@ export const HistoricTable = ({ isLoading, data }: HistoricTableProps) => {
       <Table>
         <Thead>
           <Tr>
-            <Th fontSize=".8em" color="gray.850" fontWeight={800}>
+            <Th fontSize=".8em" color="alpha850" fontWeight={800}>
               Histórico
             </Th>
             <Th
               fontSize=".8em"
               textAlign="right"
               fontWeight={500}
-              color="gray.850"
+              color="alpha850"
             >
               2019
             </Th>
@@ -35,7 +35,7 @@ export const HistoricTable = ({ isLoading, data }: HistoricTableProps) => {
               fontSize=".8em"
               textAlign="right"
               fontWeight={500}
-              color="gray.850"
+              color="alpha850"
             >
               2020
             </Th>
@@ -45,13 +45,13 @@ export const HistoricTable = ({ isLoading, data }: HistoricTableProps) => {
         <Tbody>
           {data?.map((item) => (
             <Tr key={item.title}>
-              <Th color="gray.800" fontWeight={500} fontSize=".85em">
+              <Th color="alpha800" fontWeight={500} fontSize=".85em">
                 {item.title}
               </Th>
-              <Th color="gray.800" fontWeight={500} fontSize=".85em">
+              <Th color="alpha800" fontWeight={500} fontSize=".85em">
                 {item[2019]}
               </Th>
-              <Th color="gray.800" fontWeight={500} fontSize=".85em">
+              <Th color="alpha800" fontWeight={500} fontSize=".85em">
                 {item[2020]}
               </Th>
             </Tr>

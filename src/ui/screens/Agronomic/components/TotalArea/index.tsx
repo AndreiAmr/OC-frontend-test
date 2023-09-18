@@ -25,7 +25,7 @@ export const TotalArea = () => {
       lastRefresh={items.lastRefresh}
     >
       <Flex>
-        <Text fontWeight={700} color="gray.900">
+        <Text fontWeight={700} color="alpha900">
           Áreas Totais
         </Text>
 

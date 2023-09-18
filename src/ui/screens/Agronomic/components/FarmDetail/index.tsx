@@ -41,19 +41,19 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
       // wrap="wrap"
     >
       <Box>
-        <Text fontWeight={800} fontSize={"1.2em"} color="gray.800" mb="8px">
+        <Text fontWeight={800} fontSize={"1.2em"} color="alpha800" mb="8px">
           {currentFarm.name}
         </Text>
-        <Tag backgroundColor="gray.200" color="gray.800">
+        <Tag backgroundColor="alpha200" color="alpha800">
           {currentFarm.produtividadeStatus}
         </Tag>
-        <Text fontSize=".8em" maxW="350px" mt="13px" color="gray.600">
+        <Text fontSize=".8em" maxW="350px" mt="13px" color="alpha600">
           {currentFarm.address}
         </Text>
         <Text
           fontSize=".7em"
           fontWeight={800}
-          color="gray.800"
+          color="alpha800"
           mt="10px"
           mb="32px"
         >
@@ -66,7 +66,7 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
           fontSize=".8em"
           maxW="350px"
           mt="13px"
-          color="gray.100"
+          color="alpha100"
           fontWeight={800}
         >
           NIRF
@@ -75,7 +75,7 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
           fontSize=".8em"
           maxW="350px"
           // mt="13px"
-          // color="gray.800"
+          // color="alpha800"
           fontWeight={800}
         >
           -
@@ -85,7 +85,7 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
           fontSize=".8em"
           maxW="350px"
           mt="24px"
-          color="gray.100"
+          color="alpha100"
           fontWeight={800}
         >
           INCRA
@@ -96,7 +96,7 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
             fontSize="1.2em"
             maxW="350px"
             // mt="13px"
-            color="gray.800"
+            color="alpha800"
             fontWeight={800}
           >
             {currentFarm.incra}
@@ -111,7 +111,7 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
           fontSize=".8em"
           maxW="350px"
           mt="62px"
-          color="gray.100"
+          color="alpha100"
           fontWeight={800}
           mb="16px"
         >
@@ -130,16 +130,16 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
           <Tbody>
             {currentFarm.matriculas.map((item) => (
               <Tr key={item.number}>
-                <Th color="gray.800" fontWeight={500} fontSize=".85em">
+                <Th color="alpha800" fontWeight={500} fontSize=".85em">
                   {item.number}
                 </Th>
-                <Th color="gray.800" fontWeight={500} fontSize=".85em">
+                <Th color="alpha800" fontWeight={500} fontSize=".85em">
                   {item.area}
                 </Th>
-                <Th color="gray.800" fontWeight={500} fontSize=".85em">
+                <Th color="alpha800" fontWeight={500} fontSize=".85em">
                   {item.uf}
                 </Th>
-                <Th color="gray.800" fontWeight={500} fontSize=".85em">
+                <Th color="alpha800" fontWeight={500} fontSize=".85em">
                   {item.municipio}
                 </Th>
               </Tr>
@@ -153,7 +153,7 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
           fontSize=".8em"
           maxW="350px"
           mt="60px"
-          color="gray.100"
+          color="alpha100"
           fontWeight={800}
           mb="16px"
         >
@@ -162,10 +162,10 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
         <Table>
           <Thead>
             <Tr>
-              <Th fontSize=".8em" color="gray.800">
+              <Th fontSize=".8em" color="alpha800">
                 Nome
               </Th>
-              <Th fontSize=".8em" color="gray.800">
+              <Th fontSize=".8em" color="alpha800">
                 %
               </Th>
             </Tr>
@@ -173,10 +173,10 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
           <Tbody>
             {currentFarm.propietarios.map((item) => (
               <Tr key={item.name}>
-                <Th color="gray.800" fontWeight={500} fontSize=".85em">
+                <Th color="alpha800" fontWeight={500} fontSize=".85em">
                   {item.name}
                 </Th>
-                <Th color="gray.800" fontWeight={500} fontSize=".85em">
+                <Th color="alpha800" fontWeight={500} fontSize=".85em">
                   {item.percentage}
                 </Th>
               </Tr>
@@ -189,7 +189,7 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
           fontSize=".8em"
           maxW="350px"
           mt="60px"
-          color="gray.100"
+          color="alpha100"
           fontWeight={800}
           mb="32px"
         >
@@ -231,8 +231,8 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
             h="21px"
             fontSize=".75em"
             fontWeight={800}
-            border="1.45px solid gray.600"
-            color="gray.600"
+            border="1.45px solid alpha600"
+            color="alpha600"
             background="white"
             borderRadius="3px"
           >
@@ -242,8 +242,8 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
             h="21px"
             fontSize=".75em"
             fontWeight={800}
-            border="1.45px solid gray.600"
-            color="gray.600"
+            border="1.45px solid alpha600"
+            color="alpha600"
             background="white"
             borderRadius="3px"
           >

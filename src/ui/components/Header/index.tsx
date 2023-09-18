@@ -78,7 +78,7 @@ export const Header = ({ handleChangePage, currentPage }: HeaderProps) => {
                 fontWeight={700}
                 fontSize={".55em"}
                 textAlign="center"
-                color="gray.600"
+                color="alpha600"
                 lineHeight="9px"
               >
                 PRODUTOR RURAL
@@ -86,16 +86,16 @@ export const Header = ({ handleChangePage, currentPage }: HeaderProps) => {
             </Box>
 
             <Box marginLeft="21px">
-              <Text fontWeight={700} color="gray.700">
+              <Text fontWeight={700} color="alpha700">
                 Produtor João Ferreira
               </Text>
-              <Text fontWeight={600} color="gray.400" fontSize="0.85em">
+              <Text fontWeight={600} color="alpha400" fontSize="0.85em">
                 02.916.265/0001-60
               </Text>
             </Box>
           </Flex>
           <Flex h="81px" alignItems="center" mr="44px" flexDir="column">
-            <Text color="gray.400" fontWeight={700} fontSize=".85em">
+            <Text color="alpha400" fontWeight={700} fontSize=".85em">
               REGIONAL
             </Text>
             <Tag
@@ -104,7 +104,7 @@ export const Header = ({ handleChangePage, currentPage }: HeaderProps) => {
               variant="subtle"
               justifyContent="center"
               background="gray.300"
-              color="gray.600"
+              color="alpha800"
               fontWeight={400}
             >
               Sul

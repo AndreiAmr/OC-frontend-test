@@ -58,7 +58,7 @@ export const Fazendas = ({
       lastRefresh={items.lastRefresh}
     >
       <Box>
-        <Text fontWeight={800} color="gray.900" mb="30px">
+        <Text fontWeight={800} color="alpha300" mb="30px">
           Fazendas
         </Text>
         <Flex wrap="wrap" gap="27px">

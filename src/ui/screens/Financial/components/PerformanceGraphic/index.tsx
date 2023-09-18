@@ -81,7 +81,7 @@ export const PerformanceGraphic = ({
       pb="10px"
       background="white"
     >
-      <Text color="gray.850" fontWeight={800} fontSize="1em" my="14px">
+      <Text color="alpha850" fontWeight={800} fontSize="1em" my="14px">
         Histórico de Perfomance
       </Text>
 

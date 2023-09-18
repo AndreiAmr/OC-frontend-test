@@ -19,7 +19,7 @@ export const NVDIGraphic = ({ data }: { data: any }) => {
       pl="18px"
       pb="10px"
     >
-      <Text fontWeight={800} fontSize="1em" color="gray.900" mb="21px">
+      <Text fontWeight={800} fontSize="1em" color="alpha900" mb="21px">
         NVDI médio e Chuva média por área (mm/ha)
       </Text>
       <ResponsiveContainer maxHeight={240}>

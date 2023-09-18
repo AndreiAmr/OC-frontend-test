@@ -55,19 +55,19 @@ export const FeelingDescription = ({
       <Box width="100%">
         <Flex flex={1} justifyContent="space-between" mb="8px">
           {name && (
-            <Text fontSize=".9em" color="gray.600" fontWeight={800}>
+            <Text fontSize=".9em" color="alpha600" fontWeight={800}>
               {name}
             </Text>
           )}
           {date && (
-            <Text fontSize=".9em" color="gray.600" fontWeight={400}>
+            <Text fontSize=".9em" color="alpha600" fontWeight={400}>
               {date}
             </Text>
           )}
         </Flex>
         <Text
           fontSize="1.1em"
-          color="gray.600"
+          color="alpha600"
           fontWeight={400}
           background={linearGradient}
           backgroundClip={linearGradient ? "text" : "unset"}

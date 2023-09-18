@@ -36,7 +36,7 @@ export const Financial = () => {
           mb="22px"
           overflow="hidden"
         >
-          <Text color="gray.600" fontSize=".9em">
+          <Text color="alpha600" fontSize=".9em">
             Tempo Real
           </Text>
           <Box h="8px" w="8px" borderRadius="4px" backgroundColor="red.500" />
@@ -62,7 +62,7 @@ export const Financial = () => {
         <Divider m="65px" width="94%" />
         <Flex marginX="65px" gap="24px">
           <Flex flex={0.4} flexDir="column">
-            <Text color="gray.400" fontWeight={800} fontSize="1.2em">
+            <Text color="alpha400" fontWeight={800} fontSize="1.2em">
               Institucional
             </Text>
             <Flex mt="34px" gap="16px" width="100%">
@@ -76,7 +76,7 @@ export const Financial = () => {
             <Serasa isLoading={isLoading} />
           </Flex>
           <Box width="100%">
-            <Text color="gray.400" fontWeight={800} fontSize="1.2em" mb="33px">
+            <Text color="alpha400" fontWeight={800} fontSize="1.2em" mb="33px">
               Institucional
             </Text>
             <Flex flexDirection="column" gap="12px" flex={1}>

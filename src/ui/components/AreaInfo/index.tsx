@@ -19,10 +19,10 @@ export const AreaInfo = ({ icon, title, value }: AreaInfoProps) => {
       alignItems="center"
     >
       <Image src={icon} position="absolute" top="-25%" />
-      <Text mt="15px" fontSize=".9em" fontWeight={700} color="gray.800">
+      <Text mt="15px" fontSize=".9em" fontWeight={700} color="alpha800">
         {value}
       </Text>
-      <Text fontSize=".65em" fontWeight={700} color="gray.600">
+      <Text fontSize=".65em" fontWeight={700} color="alpha600">
         {title}
       </Text>
     </Flex>

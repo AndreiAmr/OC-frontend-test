@@ -27,7 +27,7 @@ export const Siagri = ({ isLoading }: SiagriProps) => {
         width="100%"
       >
         <Flex flex={1} justifyContent="space-between" alignItems="center">
-          <Text color="gray.400" fontWeight={800} fontSize=".9em">
+          <Text color="alpha400" fontWeight={800} fontSize=".9em">
             ERP
           </Text>
           <Image src={SiagriLogo} />

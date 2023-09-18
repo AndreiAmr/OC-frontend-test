@@ -11,14 +11,13 @@ export const chakraTheme = extendTheme({
       50: "#EDF2F7",
       100: "#E2E8F0",
     },
-    gray: {
-      50: "#F7FAFC",
-      100: "#A0AEC0",
-      600: "#718096",
-      800: "#4A5568",
-      850: "#171923",
-      900: "#2D3748",
-    },
+    alpha150: "#F7FAFC",
+    alpha100: "#A0AEC0",
+    alpha400: "#A0AEC0",
+    alpha600: "#718096",
+    alpha800: "#4A5568",
+    alpha850: "#171923",
+    alpha900: "#2D3748",
   },
   styles: {
     global: {

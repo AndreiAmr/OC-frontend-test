@@ -33,7 +33,7 @@ export const Map = (props: UseMapProps) => {
             height="26px"
             background="blue.100"
             borderRadius="5px"
-            color="gray.600"
+            color="alpha600"
             onClick={handleSetWeatherMode}
           >
             Clima

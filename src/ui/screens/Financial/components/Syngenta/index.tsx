@@ -24,11 +24,11 @@ export const Syngenta = ({ isLoading }: SyngentaProps) => {
     >
       <Image src={SyngentaLogo} my="22px" />
 
-      <Text fontSize="1em" color="gray.850" fontWeight={800}>
+      <Text fontSize="1em" color="alpha850" fontWeight={800}>
         Syngenta
       </Text>
       <Text
-        color="gray.600"
+        color="alpha600"
         fontSize=".9em"
         fontWeight={700}
         mt="8px"
@@ -39,7 +39,7 @@ export const Syngenta = ({ isLoading }: SyngentaProps) => {
 
       <Divider mb="16px" width="80%" />
 
-      <Text color="gray.900" fontSize="1.1em" fontWeight={800} mb="22px">
+      <Text color="alpha900" fontSize="1.1em" fontWeight={800} mb="22px">
         50%
       </Text>
     </Flex>

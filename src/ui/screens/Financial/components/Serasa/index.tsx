@@ -31,10 +31,15 @@ export const Serasa = ({ isLoading }: SerasaProps) => {
       mb="68px"
     >
       <Flex alignItems="center" gap="16px">
-        <Text fontSize="1em" fontWeight={800} color="gray.400">
+        <Text fontSize="1em" fontWeight={800} color="alpha400">
           Score Serasa
         </Text>
-        <Tag background="green.100" color="green.400" borderRadius="100px">
+        <Tag
+          background="green.100"
+          borderRadius="100px"
+          color="green.600"
+          fontWeight={700}
+        >
           BOM
         </Tag>
       </Flex>

@@ -26,16 +26,16 @@ export const UnityBusiness = ({ isLoading }: UnityBusinessProps) => {
         width="100%"
       >
         <Flex gap="46px">
-          <Text color="gray.400" fontWeight={800} fontSize=".9em">
+          <Text color="alpha400" fontWeight={800} fontSize=".9em">
             Unidades de Negócio
           </Text>
           <Tag
             backgroundColor="green.100"
-            color="green.400"
+            color="green.600"
+            fontWeight={700}
             size="sm"
             borderRadius="100px"
             height="25px"
-            fontWeight={700}
             mr="10px"
           >
             BAIXO
@@ -44,7 +44,7 @@ export const UnityBusiness = ({ isLoading }: UnityBusinessProps) => {
       </Flex>
 
       <Text
-        color="gray.850"
+        color="alpha850"
         fontWeight={800}
         fontSize="1.5em"
         paddingLeft="20px"
