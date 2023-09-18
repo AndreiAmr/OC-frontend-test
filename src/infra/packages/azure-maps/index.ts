@@ -12,5 +12,5 @@ export const mapOptions: IAzureMapOptions = {
   style: "satellite",
 
   center: [-46.683251, -23.780669],
-  zoom: 12,
+  zoom: 3,
 };

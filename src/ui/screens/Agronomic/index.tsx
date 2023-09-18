@@ -6,10 +6,9 @@ import { Fazendas } from "./components/Fazendas";
 import { FarmDetails } from "./components/FarmDetail";
 import { useState } from "react";
 import { FarmProps } from "../../../infra/types/farm";
-import { farmsMocked } from "../../../infra/mocks/farms";
 
 export const Agronomic = () => {
-  const [currentFarm, setCurrentFarm] = useState<FarmProps>(farmsMocked[0]);
+  const [currentFarm, setCurrentFarm] = useState<FarmProps>();
 
   return (
     <AnimatePresence>
@@ -25,7 +24,11 @@ export const Agronomic = () => {
             currentFarm={currentFarm}
             handleChangeCurrentFarm={setCurrentFarm}
           />
-          <FarmDetails currentFarm={currentFarm} />
+          {currentFarm && (
+            <>
+              <FarmDetails currentFarm={currentFarm} />
+            </>
+          )}
         </Box>
       </motion.div>
     </AnimatePresence>

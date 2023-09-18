@@ -41,19 +41,19 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
       // wrap="wrap"
     >
       <Box>
-        <Text fontWeight={800} fontSize={"1.2em"} color="#4A5568" mb="8px">
+        <Text fontWeight={800} fontSize={"1.2em"} color="gray.800" mb="8px">
           {currentFarm.name}
         </Text>
-        <Tag backgroundColor="gray.200" color="#4A5568">
+        <Tag backgroundColor="gray.200" color="gray.800">
           {currentFarm.produtividadeStatus}
         </Tag>
-        <Text fontSize=".8em" maxW="350px" mt="13px" color="#718096">
+        <Text fontSize=".8em" maxW="350px" mt="13px" color="gray.600">
           {currentFarm.address}
         </Text>
         <Text
           fontSize=".7em"
           fontWeight={800}
-          color="#4A5568"
+          color="gray.800"
           mt="10px"
           mb="32px"
         >
@@ -66,7 +66,7 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
           fontSize=".8em"
           maxW="350px"
           mt="13px"
-          color="#A0AEC0"
+          color="gray.100"
           fontWeight={800}
         >
           NIRF
@@ -75,7 +75,7 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
           fontSize=".8em"
           maxW="350px"
           // mt="13px"
-          // color="#4A5568"
+          // color="gray.800"
           fontWeight={800}
         >
           -
@@ -85,7 +85,7 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
           fontSize=".8em"
           maxW="350px"
           mt="24px"
-          color="#A0AEC0"
+          color="gray.100"
           fontWeight={800}
         >
           INCRA
@@ -96,13 +96,13 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
             fontSize="1.2em"
             maxW="350px"
             // mt="13px"
-            color="#4A5568"
+            color="gray.800"
             fontWeight={800}
           >
             {currentFarm.incra}
           </Text>
           <Image src={CheckIcon} ml="8px" mr="5px" />
-          <Text color="#48BB78" fontWeight={800} fontSize=".9em">
+          <Text color="green.600" fontWeight={800} fontSize=".9em">
             Quitado
           </Text>
         </Flex>
@@ -111,7 +111,7 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
           fontSize=".8em"
           maxW="350px"
           mt="62px"
-          color="#A0AEC0"
+          color="gray.100"
           fontWeight={800}
           mb="16px"
         >
@@ -129,17 +129,17 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
 
           <Tbody>
             {currentFarm.matriculas.map((item) => (
-              <Tr>
-                <Th color="#4A5568" fontWeight={500} fontSize=".85em">
+              <Tr key={item.number}>
+                <Th color="gray.800" fontWeight={500} fontSize=".85em">
                   {item.number}
                 </Th>
-                <Th color="#4A5568" fontWeight={500} fontSize=".85em">
+                <Th color="gray.800" fontWeight={500} fontSize=".85em">
                   {item.area}
                 </Th>
-                <Th color="#4A5568" fontWeight={500} fontSize=".85em">
+                <Th color="gray.800" fontWeight={500} fontSize=".85em">
                   {item.uf}
                 </Th>
-                <Th color="#4A5568" fontWeight={500} fontSize=".85em">
+                <Th color="gray.800" fontWeight={500} fontSize=".85em">
                   {item.municipio}
                 </Th>
               </Tr>
@@ -153,7 +153,7 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
           fontSize=".8em"
           maxW="350px"
           mt="60px"
-          color="#A0AEC0"
+          color="gray.100"
           fontWeight={800}
           mb="16px"
         >
@@ -162,21 +162,21 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
         <Table>
           <Thead>
             <Tr>
-              <Th fontSize=".8em" color="#4A5568">
+              <Th fontSize=".8em" color="gray.800">
                 Nome
               </Th>
-              <Th fontSize=".8em" color="#4A5568">
+              <Th fontSize=".8em" color="gray.800">
                 %
               </Th>
             </Tr>
           </Thead>
           <Tbody>
             {currentFarm.propietarios.map((item) => (
-              <Tr>
-                <Th color="#4A5568" fontWeight={500} fontSize=".85em">
+              <Tr key={item.name}>
+                <Th color="gray.800" fontWeight={500} fontSize=".85em">
                   {item.name}
                 </Th>
-                <Th color="#4A5568" fontWeight={500} fontSize=".85em">
+                <Th color="gray.800" fontWeight={500} fontSize=".85em">
                   {item.percentage}
                 </Th>
               </Tr>
@@ -189,7 +189,7 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
           fontSize=".8em"
           maxW="350px"
           mt="60px"
-          color="#A0AEC0"
+          color="gray.100"
           fontWeight={800}
           mb="32px"
         >
@@ -220,8 +220,8 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
             h="21px"
             fontSize=".75em"
             fontWeight={800}
-            border="1.45px solid #48BB78"
-            color="#48BB78"
+            border="1.45px solid green.600"
+            color="green.600"
             background="white"
             borderRadius="3px"
           >
@@ -231,8 +231,8 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
             h="21px"
             fontSize=".75em"
             fontWeight={800}
-            border="1.45px solid #718096"
-            color="#718096"
+            border="1.45px solid gray.600"
+            color="gray.600"
             background="white"
             borderRadius="3px"
           >
@@ -242,8 +242,8 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
             h="21px"
             fontSize=".75em"
             fontWeight={800}
-            border="1.45px solid #718096"
-            color="#718096"
+            border="1.45px solid gray.600"
+            color="gray.600"
             background="white"
             borderRadius="3px"
           >
@@ -251,10 +251,13 @@ export const FarmDetails = ({ currentFarm }: FarmDetailsProps) => {
           </Button>
         </Flex>
         <Box height="37px" />
-        <Map />
-        <ProdutividadeGraphic />
+        <Map
+          polygonGeometry={currentFarm.geometry}
+          farmCenter={currentFarm.farmCenter}
+        />
+        <ProdutividadeGraphic data={currentFarm.produtividade} />
         <Box height={"31px"} />
-        <NVDIGraphic />
+        <NVDIGraphic data={currentFarm.NVDIGraphic} />
       </Flex>
     </Flex>
   );

@@ -10,3 +10,5 @@ export enum AzureMapStyles {
   High_contrast_dark = "high_contrast_dark",
   High_contrast_light = "high_contrast_light",
 }
+
+export type PolygonType = number[][][];

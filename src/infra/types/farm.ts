@@ -24,4 +24,15 @@ export interface FarmProps {
   matriculas: MatriculaProps[];
   propietarios: PropietarioProps[];
   areaProdutiva: number;
+  geometry: number[][][];
+  farmCenter: number[];
+  NVDIGraphic: {
+    name: string;
+    mm: number;
+    area: number;
+  }[];
+  produtividade: {
+    name: string;
+    value: number;
+  }[];
 }
