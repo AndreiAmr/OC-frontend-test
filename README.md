@@ -1,4 +1,4 @@
-# ANDREI AMARAl - FRONTEND TEST
+# ANDREI AMARAL - FRONTEND TEST
 
 Seja bem vindo(a)!
 
