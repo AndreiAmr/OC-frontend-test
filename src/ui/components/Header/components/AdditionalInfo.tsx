@@ -9,13 +9,13 @@ interface AdditionalInfoProps {
 export const AdditionalInfo = ({ title, description }: AdditionalInfoProps) => {
   return (
     <Box>
-      <Text textAlign="right" fontWeight={700} color="gray.400">
+      <Text textAlign="right" fontWeight={700} color="alpha400">
         {title}
       </Text>
 
       <Flex gap="10px" alignItems="center">
         <Image src={UserIcon} />
-        <Text textAlign="right" fontWeight={700} color="gray.600">
+        <Text textAlign="right" fontWeight={700} color="alpha800">
           {description}
         </Text>
       </Flex>

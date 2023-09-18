@@ -30,22 +30,22 @@ export const FazendaItem = ({
       >
         <Flex
           gap="13px"
-          background={isActive ? "#F7FAFC" : undefined}
+          background={isActive ? "alpha50" : undefined}
           minW="250px"
           padding="13px 21px"
           borderRadius={9}
           cursor="pointer"
           _hover={{
-            background: "#F7FAFC",
+            background: "alpha50",
           }}
           transition="all .5s"
         >
           <Image src={FazendaIcon} />
           <Box>
-            <Text fontWeight="bold" color="#4A5568" fontSize=".9em">
+            <Text fontWeight="bold" color="alpha800" fontSize=".9em">
               {title}
             </Text>
-            <Text fontWeight="bold" color="#718096" fontSize=".9em" mb="3px">
+            <Text fontWeight="bold" color="alpha600" fontSize=".9em" mb="3px">
               {location}
             </Text>
             <Flex gap="20px">
@@ -56,7 +56,7 @@ export const FazendaItem = ({
                   background="gray.500"
                   borderRadius="2px"
                 />
-                <Text fontWeight="bold" color="#718096" fontSize=".8em">
+                <Text fontWeight="bold" color="alpha600" fontSize=".8em">
                   {totalArea} ha.
                 </Text>
               </Flex>
@@ -79,7 +79,7 @@ export const FazendaItem = ({
                     right={0}
                   />
                 </Box>
-                <Text fontWeight="bold" color="#718096" fontSize=".8em">
+                <Text fontWeight="bold" color="gray.600" fontSize=".8em">
                   {areaPropria} ha.
                 </Text>
               </Flex>

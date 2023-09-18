@@ -9,7 +9,7 @@ import { FarmProps } from "../../../../../infra/types/farm";
 
 interface FazendasProps {
   handleChangeCurrentFarm(farm: FarmProps): void;
-  currentFarm: FarmProps;
+  currentFarm?: FarmProps;
 }
 
 export const Fazendas = ({
@@ -45,7 +45,7 @@ export const Fazendas = ({
         location={item.location}
         title={item.name}
         totalArea={item.totalArea}
-        isActive={currentFarm.name === item.name}
+        isActive={currentFarm?.name === item.name}
         onPress={() => handleChangeCurrentFarm(item)}
       />
     ));
@@ -58,7 +58,7 @@ export const Fazendas = ({
       lastRefresh={items.lastRefresh}
     >
       <Box>
-        <Text fontWeight={800} color="#2D3748" mb="30px">
+        <Text fontWeight={800} color="alpha300" mb="30px">
           Fazendas
         </Text>
         <Flex wrap="wrap" gap="27px">

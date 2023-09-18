@@ -10,52 +10,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-export const NVDIGraphic = () => {
-  const data = [
-    {
-      name: "Page A",
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
-    },
-    {
-      name: "Page B",
-      uv: 3000,
-      pv: 1398,
-      amt: 2210,
-    },
-    {
-      name: "Page C",
-      uv: 2000,
-      pv: 9800,
-      amt: 2290,
-    },
-    {
-      name: "Page D",
-      uv: 2780,
-      pv: 3908,
-      amt: 2000,
-    },
-    {
-      name: "Page E",
-      uv: 1890,
-      pv: 4800,
-      amt: 2181,
-    },
-    {
-      name: "Page F",
-      uv: 2390,
-      pv: 3800,
-      amt: 2500,
-    },
-    {
-      name: "Page G",
-      uv: 3490,
-      pv: 4300,
-      amt: 2100,
-    },
-  ];
-
+export const NVDIGraphic = ({ data }: { data: any }) => {
   return (
     <Box
       boxShadow="0px 1px 3px #00000015"
@@ -64,7 +19,7 @@ export const NVDIGraphic = () => {
       pl="18px"
       pb="10px"
     >
-      <Text fontWeight={800} fontSize="1em" color="#2D3748" mb="21px">
+      <Text fontWeight={800} fontSize="1em" color="alpha900" mb="21px">
         NVDI médio e Chuva média por área (mm/ha)
       </Text>
       <ResponsiveContainer maxHeight={240}>
@@ -115,13 +70,13 @@ export const NVDIGraphic = () => {
           />
           <Tooltip />
 
-          <CartesianGrid stroke="#E2E8F0" strokeDasharray={"3 3"} />
+          <CartesianGrid stroke="blue.100" strokeDasharray={"3 3"} />
 
-          <Bar dataKey="pv" barSize={20} fill="url(#bar-gradient)" />
+          <Bar dataKey="area" barSize={20} fill="url(#bar-gradient)" />
 
           <Area
             type="natural"
-            dataKey="uv"
+            dataKey="mm"
             stroke="#4FD1C5"
             strokeWidth={"2.64px"}
             fillOpacity={1}

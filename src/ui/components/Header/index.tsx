@@ -1,4 +1,13 @@
-import { Flex, Box, Text, Image, Tag } from "@chakra-ui/react";
+import {
+  Flex,
+  Box,
+  Text,
+  Image,
+  Tag,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+} from "@chakra-ui/react";
 import ProdutorImage from "../../assets/images/produtor.svg";
 import { Button } from "../Button";
 import { AdditionalInfo } from "./components/AdditionalInfo";
@@ -18,16 +27,34 @@ export const Header = ({ handleChangePage, currentPage }: HeaderProps) => {
       width="calc(100% - 64px)"
       height="183px"
       borderRadius="15px"
-      backgroundColor="#1A8C6F"
+      backgroundColor="main"
       mt="28px"
       mx="32px"
       px="26px"
       flexDirection="column"
     >
+      <Breadcrumb
+        my="30.5px"
+        separator="-"
+        color="white"
+        fontSize="13px"
+        fontWeight={400}
+      >
+        <BreadcrumbItem>
+          <BreadcrumbLink>Home</BreadcrumbLink>
+        </BreadcrumbItem>
+
+        <BreadcrumbItem>
+          <BreadcrumbLink>Carteira de Clientes</BreadcrumbLink>
+        </BreadcrumbItem>
+
+        <BreadcrumbItem isCurrentPage>
+          <BreadcrumbLink>Produtor João Ferreira</BreadcrumbLink>
+        </BreadcrumbItem>
+      </Breadcrumb>
       <Flex
         flexDirection="column"
-        backgroundColor="#fff"
-        mt="61px"
+        backgroundColor="white"
         borderRadius="15px"
         py="31px"
         pl="30px"
@@ -39,7 +66,7 @@ export const Header = ({ handleChangePage, currentPage }: HeaderProps) => {
               h="81px"
               w="81px"
               borderRadius="8px"
-              backgroundColor="gray.100"
+              backgroundColor="blue.50"
               display="flex"
               alignItems="center"
               justifyContent="center"
@@ -51,7 +78,7 @@ export const Header = ({ handleChangePage, currentPage }: HeaderProps) => {
                 fontWeight={700}
                 fontSize={".55em"}
                 textAlign="center"
-                color="gray.600"
+                color="alpha600"
                 lineHeight="9px"
               >
                 PRODUTOR RURAL
@@ -59,16 +86,16 @@ export const Header = ({ handleChangePage, currentPage }: HeaderProps) => {
             </Box>
 
             <Box marginLeft="21px">
-              <Text fontWeight={700} color="gray.700">
+              <Text fontWeight={700} color="alpha700">
                 Produtor João Ferreira
               </Text>
-              <Text fontWeight={600} color="gray.400" fontSize="0.85em">
+              <Text fontWeight={600} color="alpha400" fontSize="0.85em">
                 02.916.265/0001-60
               </Text>
             </Box>
           </Flex>
           <Flex h="81px" alignItems="center" mr="44px" flexDir="column">
-            <Text color="gray.400" fontWeight={700} fontSize=".85em">
+            <Text color="alpha400" fontWeight={700} fontSize=".85em">
               REGIONAL
             </Text>
             <Tag
@@ -77,7 +104,7 @@ export const Header = ({ handleChangePage, currentPage }: HeaderProps) => {
               variant="subtle"
               justifyContent="center"
               background="gray.300"
-              color="gray.600"
+              color="alpha800"
               fontWeight={400}
             >
               Sul

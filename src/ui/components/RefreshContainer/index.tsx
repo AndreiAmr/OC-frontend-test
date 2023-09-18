@@ -46,13 +46,13 @@ export const RefreshContainer = ({
           />
           <Text
             fontWeight={400}
-            color="#4A5568"
+            color="alpha800"
             fontSize=".75em"
             marginTop="6px"
           >
             Atualizado às {hours}
           </Text>
-          <Text fontWeight={400} color="#4A5568" fontSize=".75em">
+          <Text fontWeight={400} color="alpha800" fontSize=".75em">
             no dia {date}
           </Text>
         </Box>
